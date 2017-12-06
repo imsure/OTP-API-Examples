@@ -13,11 +13,13 @@ ret = requests.get(url)
 print (ret.status_code)
 print (ret.json())
 
-# Get a list of all GTFS routes on the default router (???)
+
+# Get a list of all GTFS routes on the default router (currently austin only)
 url = "http://192.168.56.6:8080/otp/routers/default/index/routes"
 ret = requests.get(url)
 print (ret.status_code)
 # print (ret.json())
+
 
 # Trip planning example
 url = "http://192.168.56.6:8080/otp/routers/default/plan"
@@ -33,10 +35,10 @@ payload = {'fromPlace': '30.283529283816247,-97.7340316772461',
            'wheelchair': 'false',
            'locale': 'en',
            'itinIndex': '0'}
-# ret = requests.get(url, params=json.dumps(payload))
+# ret = requests.get(url, params=json.dumps(payload)) // no JSON! just pass dict directly
 ret = requests.get(url, params=payload)
 print (ret.url)
-if (ret.ok):
+if ret.ok:
     print (ret.json())
 else:
     print (ret.status_code)
