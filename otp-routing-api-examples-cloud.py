@@ -41,6 +41,16 @@ ret = requests.get(url, params=payload)
 print (ret.url)
 if ret.ok:
     print (ret.status_code)
+    # print (ret.json())
+else:
+    print (ret.status_code)
+
+
+# Get all routes passing through TriMet (agency id) stop 7003 in Portland
+url = "http://34.212.174.108:8080/otp/routers/pdx/index/stops/TriMet:7003/routes"
+ret = requests.get(url)
+if ret.ok:
     print (ret.json())
+    print (ret.status_code)
 else:
     print (ret.status_code)
