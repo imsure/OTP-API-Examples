@@ -110,8 +110,8 @@ if __name__ == '__main__':
         router = routerInfo(name)
         routers.append(router)
 
-    # for router in routers:
-      #  print (router)
+    for router in routers:
+        print (router)
 
     router = routers[2]
     print (router)
