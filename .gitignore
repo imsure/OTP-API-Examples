@@ -7,3 +7,5 @@ __pycache__
 *.png
 data_plots
 conf.py
+.idea
+*.json
