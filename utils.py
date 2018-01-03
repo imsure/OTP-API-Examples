@@ -13,7 +13,10 @@ import pytz
 
 
 router_names = ["tucson", "denver", "houston", "austin", "elpaso"]
-modes = ['TRANSIT,WALK', 'TRANSIT,BICYCLE', 'WALK', 'BICYCLE']
+# CAR_PARK: park and ride
+# CAR,WALK,TRANSIT: kiss and ride
+modes = ['TRANSIT,WALK', 'TRANSIT,BICYCLE', 'WALK', 'BICYCLE',
+         'CAR_PARK', 'CAR,WALK,TRANSIT']
 
 
 class Router(object):
@@ -96,7 +99,7 @@ def randomTime():
 
 
 def randomMode():
-    return modes[randint(0, 3)]
+    return modes[randint(0, len(modes)-1)]
 
 
 def randomWalkDist():
