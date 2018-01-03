@@ -5,7 +5,7 @@ a.out
 __pycache__
 *.txt
 *.png
-data_plots
+data_plots*
 conf.py
 .idea
 *.pyc
