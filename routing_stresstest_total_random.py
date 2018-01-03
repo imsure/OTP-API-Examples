@@ -1,12 +1,16 @@
-import utils as utils
+import utils
 import requests
 import json
 import sys
 from datetime import datetime
 from requests_futures.sessions import FuturesSession # Asynchronous HTTP Requests
 
+def bg_cb(sess, resp):
+    # record the time the response was received
+    resp.tend = datetime.now()
+
 if __name__ == '__main__':
-    total = 1000
+    total = 10
     reqs = []
     routers = []
     for name in utils.router_names:
@@ -21,28 +25,22 @@ if __name__ == '__main__':
                 url, payload = utils.makeTravelRequestRandom(router)
                 reqs.append((url, payload))
 
+
+    # max workers set to 10, default is 2
+    session = FuturesSession(max_workers=10)
+    futures = []
     for req in reqs:
         tstart = datetime.now()
-        ret = requests.get(req[0], params=req[1])
-        tend = datetime.now()
-        tdelta = tend - tstart
-        print (ret.status_code, tdelta.microseconds/1e3)
+        f = session.get(req[0], params=req[1], background_callback=bg_cb)
+        futures.append((f, tstart))
 
-    # # max workers set to 10, default is 2
-    # session = FuturesSession(max_workers=10)
-    # futures = []
-    # for req in reqs:
-    #     tstart = datetime.now()
-    #     f = session.get(req[0], params=req[1])
-    #     futures.append((f, tstart))
-
-    # # wait for requests to complete
-    # index = 1
-    # for f in futures:
-    #     res = f[0].result()
-    #     tend = datetime.now()
-    #     tdelta = tend - f[1]
-    #     print (index, res.status_code, tdelta.microseconds/1e3)
-    #     index += 1
+    # wait for requests to complete
+    index = 1
+    for f in futures:
+        res = f[0].result()
+        tstart = f[1]
+        tdelta = res.tend - tstart
+        print (index, res.status_code, tdelta.microseconds/1e3)
+        index += 1
 
     # print (len(reqs))

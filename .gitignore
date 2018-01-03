@@ -9,3 +9,4 @@ data_plots
 conf.py
 .idea
 *.json
+*.pyc

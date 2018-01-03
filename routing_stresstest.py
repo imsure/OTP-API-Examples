@@ -1,4 +1,4 @@
-import otp_api_utils as utils
+import utils
 import requests
 import json
 import sys
@@ -18,11 +18,11 @@ if __name__ == '__main__':
         routers.append(router)
         if name != 'tucson':
             for i in range(0, int(total * 0.3)):
-                url, payload = utils.makeTravelRequest(router)
+                url, payload = utils.makeTravelRequestRandom(router)
                 reqs.append((url, payload))
         else:
             for i in range(0, int(total * 0.1)):
-                url, payload = utils.makeTravelRequest(router)
+                url, payload = utils.makeTravelRequestRandom(router)
                 reqs.append((url, payload))
 
 
