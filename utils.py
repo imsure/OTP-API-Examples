@@ -59,6 +59,7 @@ def routerInfo(router_name):
     return router
 
 
+# https://gis.stackexchange.com/questions/25877/generating-random-locations-nearby
 def randomGeoPoint(lat, lon, radius):
     r = radius/111300  # convert unit from meter to degree
     u = float(random.uniform(0.0, 1.0))
@@ -151,7 +152,7 @@ def makeTravelRequestRandom(router):
 def makeTravelRequestByStop(router):
     url = "{}/otp/routers/{}/plan".format(conf.ec2ip, router.name)
 
-    radius = 300  # meters
+    radius = 500  # meters
     indexes = random.sample(range(0, len(router.stops) - 1), 2)
     from_lat, from_lon = router.stop_lat_lon(indexes[0])
     from_lat, from_lon = randomGeoPoint(from_lat, from_lon, radius)
@@ -189,8 +190,8 @@ if __name__ == '__main__':
         lat, lon = router.stop_lat_lon(0)
         # print(lat, lon)
         # print(router)
-        # url, payload = makeTravelRequestByStop(router)
-        url, payload = makeTravelRequestRandom(router)
+        url, payload = makeTravelRequestByStop(router)
+        # url, payload = makeTravelRequestRandom(router)
         ret = requests.get(url, params=payload)
         # print(ret.text)
         json_obj = ret.json()
