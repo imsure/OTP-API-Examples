@@ -23,7 +23,12 @@ def bg_cb(sess, resp):
 
 
 if __name__ == '__main__':
+    from sys import argv
+
     total = 500
+    if len(argv) >= 2:
+        total = int(argv[1])
+
     reqs = []
     routers = []
     for name in utils.router_names:
