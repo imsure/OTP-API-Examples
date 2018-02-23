@@ -1,0 +1,721 @@
+{
+  "elevationMetadata": {
+    "geoidElevation": false,
+    "ellipsoidToGeoidDifference": -30.419091016691613
+  },
+  "debugOutput": {
+    "timedOut": false,
+    "totalTime": 28,
+    "renderingTime": 0,
+    "pathTimes": [
+      6,
+      4,
+      4
+    ],
+    "pathCalculationTime": 14,
+    "precalculationTime": 14
+  },
+  "plan": {
+    "itineraries": [
+      {
+        "tooSloped": false,
+        "legs": [
+          {
+            "steps": [
+              {
+                "elevation": [],
+                "lat": 32.23203948755603,
+                "distance": 35.284,
+                "relativeDirection": "DEPART",
+                "streetName": "path",
+                "absoluteDirection": "SOUTH",
+                "stayOn": false,
+                "area": false,
+                "bogusName": false,
+                "lon": -110.95497214568263
+              }
+            ],
+            "duration": 33,
+            "mode": "WALK",
+            "pathway": false,
+            "distance": 35.284,
+            "realTime": false,
+            "arrivalDelay": 0,
+            "departureDelay": 0,
+            "endTime": 1519313921000,
+            "startTime": 1519313888000,
+            "route": "",
+            "agencyTimeZoneOffset": -25200000,
+            "interlineWithPreviousLeg": false,
+            "from": {
+              "vertexType": "NORMAL",
+              "orig": "",
+              "departure": 1519313888000,
+              "lat": 32.23204,
+              "lon": -110.95497,
+              "name": "Origin"
+            },
+            "to": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 10,
+              "name": "Old Main",
+              "stopId": "1:2384136",
+              "stopCode": "302",
+              "lon": -110.9547137,
+              "lat": 32.2319959,
+              "arrival": 1519313921000,
+              "departure": 1519313922000,
+              "stopIndex": 9
+            },
+            "legGeometry": {
+              "length": 4,
+              "points": "eivcEr{edTTGGc@AI"
+            },
+            "rentedBike": false,
+            "transitLeg": false
+          },
+          {
+            "steps": [],
+            "duration": 558,
+            "transitLeg": true,
+            "rentedBike": false,
+            "routeLongName": "Purple",
+            "legGeometry": {
+              "length": 83,
+              "points": "qhvcExyedT??BLBHFT@RFb@DVBHJl@?d@?jB?vAQ@C?I?uA???kA?_A@C?Q?k@@y@@K?OGC?Q@_B?S???U?a@?U?{B@cB?a@?kFAAkH?q@?[??A{E?gGAwD?y@?C?_@Ag@?K?[?iB???qAAsC?}B?UgC?}BBcB?_B@?oC@I@E@IDGDKFADCBG?IAGCGGCG?EBEDAH?FADADAF??"
+            },
+            "to": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 15,
+              "name": "AHSL Med Library",
+              "stopId": "1:2384126",
+              "stopCode": "132",
+              "lon": -110.947355,
+              "lat": 32.239699,
+              "arrival": 1519314480000,
+              "departure": 1519314481000,
+              "stopIndex": 14
+            },
+            "from": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 10,
+              "name": "Old Main",
+              "stopId": "1:2384136",
+              "stopCode": "302",
+              "lon": -110.9547137,
+              "lat": 32.2319959,
+              "arrival": 1519313921000,
+              "departure": 1519313922000,
+              "stopIndex": 9
+            },
+            "serviceDate": "20180222",
+            "tripId": "1:t_167601_b_3336_tn_5",
+            "agencyId": "706",
+            "tripBlockId": "11426",
+            "interlineWithPreviousLeg": false,
+            "mode": "BUS",
+            "pathway": false,
+            "distance": 1605.2562807593545,
+            "realTime": false,
+            "arrivalDelay": 0,
+            "departureDelay": 0,
+            "endTime": 1519314480000,
+            "startTime": 1519313922000,
+            "route": "Purple",
+            "agencyName": "University of AZ - Cat Tran - Free Shuttle Service",
+            "agencyUrl": "http://parking.arizona.edu/alternative/cattran.php",
+            "agencyTimeZoneOffset": -25200000,
+            "routeColor": "912A85",
+            "routeType": 3,
+            "routeId": "1:6837",
+            "routeTextColor": "FFF4CA"
+          },
+          {
+            "steps": [
+              {
+                "elevation": [],
+                "lat": 32.239661,
+                "distance": 31.446999999999996,
+                "relativeDirection": "DEPART",
+                "streetName": "East Drachman Street",
+                "absoluteDirection": "EAST",
+                "stayOn": false,
+                "area": false,
+                "bogusName": false,
+                "lon": -110.947355
+              },
+              {
+                "elevation": [],
+                "lat": 32.2395224,
+                "distance": 54.338,
+                "relativeDirection": "SLIGHTLY_LEFT",
+                "streetName": "path",
+                "absoluteDirection": "SOUTHEAST",
+                "stayOn": false,
+                "area": false,
+                "bogusName": true,
+                "lon": -110.94711880000001
+              }
+            ],
+            "duration": 75,
+            "mode": "WALK",
+            "pathway": false,
+            "distance": 85.785,
+            "realTime": false,
+            "arrivalDelay": 0,
+            "departureDelay": 0,
+            "endTime": 1519314556000,
+            "startTime": 1519314481000,
+            "route": "",
+            "agencyTimeZoneOffset": -25200000,
+            "interlineWithPreviousLeg": false,
+            "from": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 15,
+              "name": "AHSL Med Library",
+              "stopId": "1:2384126",
+              "stopCode": "132",
+              "lon": -110.947355,
+              "lat": 32.239699,
+              "arrival": 1519314480000,
+              "departure": 1519314481000,
+              "stopIndex": 14
+            },
+            "to": {
+              "vertexType": "NORMAL",
+              "orig": "",
+              "arrival": 1519314556000,
+              "lat": 32.23967,
+              "lon": -110.9468,
+              "name": "Destination"
+            },
+            "legGeometry": {
+              "length": 16,
+              "points": "{xwcE~kddT??@G@E@E?G@IDEDCF?Tg@G?K?MCKM?E"
+            },
+            "rentedBike": false,
+            "transitLeg": false
+          }
+        ],
+        "fare": {
+          "details": {
+            "regular": [
+              {
+                "routes": [
+                  "1:6837"
+                ],
+                "price": {
+                  "cents": 0,
+                  "currency": {
+                    "currencyCode": "USD",
+                    "defaultFractionDigits": 2,
+                    "currency": "USD",
+                    "symbol": "$"
+                  }
+                },
+                "fareId": "1:2238"
+              }
+            ]
+          },
+          "fare": {
+            "regular": {
+              "cents": 0,
+              "currency": {
+                "currencyCode": "USD",
+                "defaultFractionDigits": 2,
+                "currency": "USD",
+                "symbol": "$"
+              }
+            }
+          }
+        },
+        "transfers": 0,
+        "elevationGained": 0,
+        "elevationLost": 0,
+        "duration": 668,
+        "startTime": 1519313888000,
+        "endTime": 1519314556000,
+        "walkTime": 108,
+        "transitTime": 558,
+        "waitingTime": 2,
+        "walkDistance": 121.17915037238562,
+        "walkLimitExceeded": false
+      },
+      {
+        "tooSloped": false,
+        "legs": [
+          {
+            "steps": [
+              {
+                "elevation": [],
+                "lat": 32.23203948755603,
+                "distance": 342.62399999999997,
+                "relativeDirection": "DEPART",
+                "streetName": "path",
+                "absoluteDirection": "SOUTH",
+                "stayOn": false,
+                "area": false,
+                "bogusName": false,
+                "lon": -110.95497214568263
+              }
+            ],
+            "duration": 317,
+            "mode": "WALK",
+            "pathway": false,
+            "distance": 342.62399999999997,
+            "realTime": false,
+            "arrivalDelay": 0,
+            "departureDelay": 0,
+            "endTime": 1519314155000,
+            "startTime": 1519313838000,
+            "route": "",
+            "agencyTimeZoneOffset": -25200000,
+            "interlineWithPreviousLeg": false,
+            "from": {
+              "vertexType": "NORMAL",
+              "orig": "",
+              "departure": 1519313838000,
+              "lat": 32.23204,
+              "lon": -110.95497,
+              "name": "Origin"
+            },
+            "to": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 3,
+              "name": "Gould Simpson",
+              "stopId": "1:2384131",
+              "stopCode": "220",
+              "lon": -110.9544657,
+              "lat": 32.2299626,
+              "arrival": 1519314155000,
+              "departure": 1519314156000,
+              "stopIndex": 2
+            },
+            "legGeometry": {
+              "length": 28,
+              "points": "eivcEr{edTTGGc@J?LALAr@@?i@\\@h@BF?P?V?LAH@?Q?E`@?AfAJM`@ABKBBj@@?UNBF??["
+            },
+            "rentedBike": false,
+            "transitLeg": false
+          },
+          {
+            "steps": [],
+            "duration": 624,
+            "transitLeg": true,
+            "rentedBike": false,
+            "routeLongName": "Green",
+            "legGeometry": {
+              "length": 76,
+              "points": "w|ucElxedT?u@@eE?M?cA?W???_@?qBAm@?[???mB??q@?G?E?EAAA?E?E?kA???sD?YAuE??AaAmA?aC???q@?e@?c@AmC?sA???wBAC?C?eBA_BAm@???qCAWBa@BY?aA?O?g@@QBsARiMD?oC@I@E@IDGDKFADCBG?IAGCGGCG?EBEDAH?FADADAF??"
+            },
+            "to": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 11,
+              "name": "AHSL Med Library",
+              "stopId": "1:2384126",
+              "stopCode": "132",
+              "lon": -110.947355,
+              "lat": 32.239699,
+              "arrival": 1519314780000,
+              "departure": 1519314781000,
+              "stopIndex": 10
+            },
+            "from": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 3,
+              "name": "Gould Simpson",
+              "stopId": "1:2384131",
+              "stopCode": "220",
+              "lon": -110.9544657,
+              "lat": 32.2299626,
+              "arrival": 1519314155000,
+              "departure": 1519314156000,
+              "stopIndex": 2
+            },
+            "serviceDate": "20180222",
+            "tripId": "1:t_167704_b_3336_tn_6",
+            "agencyId": "706",
+            "tripBlockId": "11429",
+            "interlineWithPreviousLeg": false,
+            "mode": "BUS",
+            "pathway": false,
+            "distance": 1616.6843894171116,
+            "realTime": false,
+            "arrivalDelay": 0,
+            "departureDelay": 0,
+            "endTime": 1519314780000,
+            "startTime": 1519314156000,
+            "route": "Green",
+            "agencyName": "University of AZ - Cat Tran - Free Shuttle Service",
+            "agencyUrl": "http://parking.arizona.edu/alternative/cattran.php",
+            "agencyTimeZoneOffset": -25200000,
+            "routeColor": "00B25A",
+            "routeType": 3,
+            "routeId": "1:6835",
+            "routeTextColor": "000000"
+          },
+          {
+            "steps": [
+              {
+                "elevation": [],
+                "lat": 32.239661,
+                "distance": 31.446999999999996,
+                "relativeDirection": "DEPART",
+                "streetName": "East Drachman Street",
+                "absoluteDirection": "EAST",
+                "stayOn": false,
+                "area": false,
+                "bogusName": false,
+                "lon": -110.947355
+              },
+              {
+                "elevation": [],
+                "lat": 32.2395224,
+                "distance": 54.338,
+                "relativeDirection": "SLIGHTLY_LEFT",
+                "streetName": "path",
+                "absoluteDirection": "SOUTHEAST",
+                "stayOn": false,
+                "area": false,
+                "bogusName": true,
+                "lon": -110.94711880000001
+              }
+            ],
+            "duration": 75,
+            "mode": "WALK",
+            "pathway": false,
+            "distance": 85.785,
+            "realTime": false,
+            "arrivalDelay": 0,
+            "departureDelay": 0,
+            "endTime": 1519314856000,
+            "startTime": 1519314781000,
+            "route": "",
+            "agencyTimeZoneOffset": -25200000,
+            "interlineWithPreviousLeg": false,
+            "from": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 11,
+              "name": "AHSL Med Library",
+              "stopId": "1:2384126",
+              "stopCode": "132",
+              "lon": -110.947355,
+              "lat": 32.239699,
+              "arrival": 1519314780000,
+              "departure": 1519314781000,
+              "stopIndex": 10
+            },
+            "to": {
+              "vertexType": "NORMAL",
+              "orig": "",
+              "arrival": 1519314856000,
+              "lat": 32.23967,
+              "lon": -110.9468,
+              "name": "Destination"
+            },
+            "legGeometry": {
+              "length": 16,
+              "points": "{xwcE~kddT??@G@E@E?G@IDEDCF?Tg@G?K?MCKM?E"
+            },
+            "rentedBike": false,
+            "transitLeg": false
+          }
+        ],
+        "fare": {
+          "details": {
+            "regular": [
+              {
+                "routes": [
+                  "1:6835"
+                ],
+                "price": {
+                  "cents": 0,
+                  "currency": {
+                    "currencyCode": "USD",
+                    "defaultFractionDigits": 2,
+                    "currency": "USD",
+                    "symbol": "$"
+                  }
+                },
+                "fareId": "1:2238"
+              }
+            ]
+          },
+          "fare": {
+            "regular": {
+              "cents": 0,
+              "currency": {
+                "currencyCode": "USD",
+                "defaultFractionDigits": 2,
+                "currency": "USD",
+                "symbol": "$"
+              }
+            }
+          }
+        },
+        "transfers": 0,
+        "elevationGained": 0,
+        "elevationLost": 0,
+        "duration": 1018,
+        "startTime": 1519313838000,
+        "endTime": 1519314856000,
+        "walkTime": 392,
+        "transitTime": 624,
+        "waitingTime": 2,
+        "walkDistance": 428.87629321800443,
+        "walkLimitExceeded": false
+      },
+      {
+        "tooSloped": false,
+        "legs": [
+          {
+            "steps": [
+              {
+                "elevation": [],
+                "lat": 32.23203948755603,
+                "distance": 35.284,
+                "relativeDirection": "DEPART",
+                "streetName": "path",
+                "absoluteDirection": "SOUTH",
+                "stayOn": false,
+                "area": false,
+                "bogusName": false,
+                "lon": -110.95497214568263
+              }
+            ],
+            "duration": 33,
+            "mode": "WALK",
+            "pathway": false,
+            "distance": 35.284,
+            "realTime": false,
+            "arrivalDelay": 0,
+            "departureDelay": 0,
+            "endTime": 1519314641000,
+            "startTime": 1519314608000,
+            "route": "",
+            "agencyTimeZoneOffset": -25200000,
+            "interlineWithPreviousLeg": false,
+            "from": {
+              "vertexType": "NORMAL",
+              "orig": "",
+              "departure": 1519314608000,
+              "lat": 32.23204,
+              "lon": -110.95497,
+              "name": "Origin"
+            },
+            "to": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 10,
+              "name": "Old Main",
+              "stopId": "1:2384136",
+              "stopCode": "302",
+              "lon": -110.9547137,
+              "lat": 32.2319959,
+              "arrival": 1519314641000,
+              "departure": 1519314642000,
+              "stopIndex": 9
+            },
+            "legGeometry": {
+              "length": 4,
+              "points": "eivcEr{edTTGGc@AI"
+            },
+            "rentedBike": false,
+            "transitLeg": false
+          },
+          {
+            "steps": [],
+            "duration": 558,
+            "transitLeg": true,
+            "rentedBike": false,
+            "routeLongName": "Purple",
+            "legGeometry": {
+              "length": 83,
+              "points": "qhvcExyedT??BLBHFT@RFb@DVBHJl@?d@?jB?vAQ@C?I?uA???kA?_A@C?Q?k@@y@@K?OGC?Q@_B?S???U?a@?U?{B@cB?a@?kFAAkH?q@?[??A{E?gGAwD?y@?C?_@Ag@?K?[?iB???qAAsC?}B?UgC?}BBcB?_B@?oC@I@E@IDGDKFADCBG?IAGCGGCG?EBEDAH?FADADAF??"
+            },
+            "to": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 15,
+              "name": "AHSL Med Library",
+              "stopId": "1:2384126",
+              "stopCode": "132",
+              "lon": -110.947355,
+              "lat": 32.239699,
+              "arrival": 1519315200000,
+              "departure": 1519315201000,
+              "stopIndex": 14
+            },
+            "from": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 10,
+              "name": "Old Main",
+              "stopId": "1:2384136",
+              "stopCode": "302",
+              "lon": -110.9547137,
+              "lat": 32.2319959,
+              "arrival": 1519314641000,
+              "departure": 1519314642000,
+              "stopIndex": 9
+            },
+            "serviceDate": "20180222",
+            "tripId": "1:t_167600_b_3336_tn_6",
+            "agencyId": "706",
+            "tripBlockId": "11425",
+            "interlineWithPreviousLeg": false,
+            "mode": "BUS",
+            "pathway": false,
+            "distance": 1605.2562807593545,
+            "realTime": false,
+            "arrivalDelay": 0,
+            "departureDelay": 0,
+            "endTime": 1519315200000,
+            "startTime": 1519314642000,
+            "route": "Purple",
+            "agencyName": "University of AZ - Cat Tran - Free Shuttle Service",
+            "agencyUrl": "http://parking.arizona.edu/alternative/cattran.php",
+            "agencyTimeZoneOffset": -25200000,
+            "routeColor": "912A85",
+            "routeType": 3,
+            "routeId": "1:6837",
+            "routeTextColor": "FFF4CA"
+          },
+          {
+            "steps": [
+              {
+                "elevation": [],
+                "lat": 32.239661,
+                "distance": 31.446999999999996,
+                "relativeDirection": "DEPART",
+                "streetName": "East Drachman Street",
+                "absoluteDirection": "EAST",
+                "stayOn": false,
+                "area": false,
+                "bogusName": false,
+                "lon": -110.947355
+              },
+              {
+                "elevation": [],
+                "lat": 32.2395224,
+                "distance": 54.338,
+                "relativeDirection": "SLIGHTLY_LEFT",
+                "streetName": "path",
+                "absoluteDirection": "SOUTHEAST",
+                "stayOn": false,
+                "area": false,
+                "bogusName": true,
+                "lon": -110.94711880000001
+              }
+            ],
+            "duration": 75,
+            "mode": "WALK",
+            "pathway": false,
+            "distance": 85.785,
+            "realTime": false,
+            "arrivalDelay": 0,
+            "departureDelay": 0,
+            "endTime": 1519315276000,
+            "startTime": 1519315201000,
+            "route": "",
+            "agencyTimeZoneOffset": -25200000,
+            "interlineWithPreviousLeg": false,
+            "from": {
+              "vertexType": "TRANSIT",
+              "stopSequence": 15,
+              "name": "AHSL Med Library",
+              "stopId": "1:2384126",
+              "stopCode": "132",
+              "lon": -110.947355,
+              "lat": 32.239699,
+              "arrival": 1519315200000,
+              "departure": 1519315201000,
+              "stopIndex": 14
+            },
+            "to": {
+              "vertexType": "NORMAL",
+              "orig": "",
+              "arrival": 1519315276000,
+              "lat": 32.23967,
+              "lon": -110.9468,
+              "name": "Destination"
+            },
+            "legGeometry": {
+              "length": 16,
+              "points": "{xwcE~kddT??@G@E@E?G@IDEDCF?Tg@G?K?MCKM?E"
+            },
+            "rentedBike": false,
+            "transitLeg": false
+          }
+        ],
+        "fare": {
+          "details": {
+            "regular": [
+              {
+                "routes": [
+                  "1:6837"
+                ],
+                "price": {
+                  "cents": 0,
+                  "currency": {
+                    "currencyCode": "USD",
+                    "defaultFractionDigits": 2,
+                    "currency": "USD",
+                    "symbol": "$"
+                  }
+                },
+                "fareId": "1:2238"
+              }
+            ]
+          },
+          "fare": {
+            "regular": {
+              "cents": 0,
+              "currency": {
+                "currencyCode": "USD",
+                "defaultFractionDigits": 2,
+                "currency": "USD",
+                "symbol": "$"
+              }
+            }
+          }
+        },
+        "transfers": 0,
+        "elevationGained": 0,
+        "elevationLost": 0,
+        "duration": 668,
+        "startTime": 1519314608000,
+        "endTime": 1519315276000,
+        "walkTime": 108,
+        "transitTime": 558,
+        "waitingTime": 2,
+        "walkDistance": 121.17915037238562,
+        "walkLimitExceeded": false
+      }
+    ],
+    "to": {
+      "vertexType": "NORMAL",
+      "orig": "",
+      "lat": 32.23967,
+      "lon": -110.9468,
+      "name": "Destination"
+    },
+    "from": {
+      "vertexType": "NORMAL",
+      "orig": "",
+      "lat": 32.23204,
+      "lon": -110.95497,
+      "name": "Origin"
+    },
+    "date": 1519313400000
+  },
+  "requestParameters": {
+    "locale": "en",
+    "date": "2-22-2018",
+    "mode": "TRANSIT,WALK",
+    "wheelchair": "false",
+    "arriveBy": "false",
+    "fromPlace": "32.23204, -110.95497",
+    "toPlace": "32.23967, -110.94680",
+    "maxWalkDistance": "804.672",
+    "time": "8:30am"
+  }
+}
+200

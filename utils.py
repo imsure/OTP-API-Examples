@@ -12,7 +12,8 @@ import pandas as pd
 import pytz
 
 
-router_names = ["tucson", "denver", "houston", "austin", "elpaso"]
+# router_names = ["tucson", "denver", "houston", "austin", "elpaso"]
+router_names = ["tucson", "austin", "elpaso"]
 # CAR_PARK: park and ride
 # CAR,WALK,TRANSIT: kiss and ride
 modes = ['TRANSIT,WALK', 'TRANSIT,BICYCLE', 'WALK', 'BICYCLE',

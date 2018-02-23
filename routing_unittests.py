@@ -19,9 +19,11 @@ router2pos = {
     # UofA -> Metropia office
     # 'tucson': {'from': '32.23114, -110.94548', 'to': '32.2866043,-110.9473657'},
     # UofA -> Downtown
-    'tucson': {'from': '32.2315175,-110.9565735', 'to': '32.22188, -110.96612'},
+    # 'tucson': {'from': '32.2315175,-110.9565735', 'to': '32.22188, -110.96612'},
+    # within UofA: old main -> arizona health science library
+    'tucson': {'from': '32.23204, -110.95497', 'to': '32.23967, -110.94680'},
     # Davis-Monthan Air Force Base -> Metropia office, 0 itinerary returned for public transit
-    # 'tucson': {'from': '32.1748743,-110.8936878', 'to': '32.2866043,-110.9473657'},
+    #'tucson': {'from': '32.1748743,-110.8936878', 'to': '32.2866043,-110.9473657'},
 }
 
 
@@ -32,9 +34,11 @@ def route(router):
         'fromPlace': '{}'.format(router2pos[router]['from']),
         'toPlace': '{}'.format(router2pos[router]['to']),
         'time': '8:30am',
-        'date': '1-3-2018',
+        'date': '2-22-2018',
+        # 'date': '2-02-18',
         'mode': 'TRANSIT,WALK',
         # 'mode': 'BICYCLE',
+        # 'mode': 'WALK',
         'maxWalkDistance': '804.672',
         'arriveBy': 'false',
         'wheelchair': 'false',
@@ -44,7 +48,8 @@ def route(router):
     ret = requests.get(url, params=payload)
     # print(ret.url)
     if ret.ok:
-        # print(ret.text)
+        # print(ret.url)
+        print(ret.text)
         print(ret.status_code)
         json_obj = ret.json()
         # print(type(json_obj)) # dict

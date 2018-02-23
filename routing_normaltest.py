@@ -7,7 +7,7 @@ import requests
 from datetime import datetime
 
 if __name__ == '__main__':
-    total = 10
+    total = 100
     reqs = []
     routers = []
     for name in utils.router_names:
